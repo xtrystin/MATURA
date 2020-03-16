@@ -1,0 +1,62 @@
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+void Wczytaj()
+{
+    int piksele[200][320];
+    fstream plik;
+    plik.open("dane.txt");
+    if (!plik.good())
+        cout << "ERROR";
+
+    for (int i=0; i<200; i++)
+    {
+        for (int j=0; j <320; j++)
+        {
+            plik >> piksele[i][j];
+        }
+    }
+  int licznik =0;
+  int ilosc =0;
+  bool a =1;
+   for (int i=0; i<200; i++)
+    {
+        a =1;
+        licznik = 0;
+        for (int j=0; j <160; j++)
+        {
+
+                for (int o=319-j; o >=160; o--)
+                {
+                    if (piksele[i][j] == piksele[i][o])
+                    {
+                        licznik++;
+                        a = 1;
+                        break;
+                    }
+                    else
+                    {
+                        a = 0;
+                        break;
+                    }
+                }
+            if (a == 0)
+                break;
+        }
+       // cout << i << " " << licznik << endl;
+        if (licznik != 160)
+        {
+            ilosc++;
+        }
+    }
+  cout << ilosc << endl;
+
+
+    plik.close();
+}
+int main()
+{
+    Wczytaj();
+    return 0;
+}

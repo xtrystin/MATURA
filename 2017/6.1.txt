@@ -1,0 +1,48 @@
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+void Wczytaj()
+{
+    int piksele[200][320];
+    fstream plik;
+    plik.open("dane.txt");
+    if (!plik.good())
+        cout << "ERROR";
+
+    for (int i=0; i<200; i++)
+    {
+        for (int j=0; j <320; j++)
+        {
+            plik >> piksele[i][j];
+        }
+    }
+    int max = piksele[0][0];
+     for (int i=0; i<200; i++)
+    {
+        for (int j=0; j <320; j++)
+        {
+           if(piksele[i][j] > max)
+                max = piksele[i][j];
+        }
+    }
+    cout << max <<endl;
+    int min;
+    for (int i=0; i<200; i++)
+    {
+        for (int j=0; j <320; j++)
+        {
+           if(piksele[i][j] <  min)
+                min = piksele[i][j];
+        }
+    }
+    cout << min;
+
+
+    plik.close();
+}
+int main()
+{
+    Wczytaj();
+    return 0;
+}
