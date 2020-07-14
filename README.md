@@ -12,3 +12,9 @@ Rozwiązania zadań maturalnych w C++:
 * 2019 			
 * 2019 czerwiec	
 * 2020 probna cke
+
+
+ToDo:
+1. dodac access
+2. dodac excel
+3. dodac algorymty
