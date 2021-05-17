@@ -1,7 +1,12 @@
 # MATURA INFORMATYKA
-Arkusze oraz dane: https://arkusze.pl/informatyka-matura-poziom-rozszerzony/
-
-Rozwiązania zadań maturalnych w C++:
+Przydatne linki:
+  1. Arkusze oraz dane: 
+  - https://arkusze.pl/informatyka-matura-poziom-rozszerzony/
+  - https://cke.gov.pl/egzamin-maturalny/egzamin-w-nowej-formule/arkusze/
+  2. Zbiór zadań cke: 
+  - https://cke.gov.pl/images/_EGZAMIN_MATURALNY_OD_2015/Materialy/Zbiory_zadan/Matura_Zbi%C3%B3r_zada%C5%84_Informatyka.pdf
+  
+Rozwiązania zadań maturalnych:
 * 2015			
 * 2016			
 * 2016 czerwiec
@@ -15,6 +20,4 @@ Rozwiązania zadań maturalnych w C++:
 
 
 ToDo:
-1. dodac access
-2. dodac excel
-3. dodac algorymty
+1. dodac algorymty
